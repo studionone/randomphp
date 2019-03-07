@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace joshredwards\RandomPHP\Exceptions;
+namespace Studionone\RandomPHP\Exceptions;
 
 class RandomChoiceException extends \Exception
 {

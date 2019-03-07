@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace joshredwards\RandomPHP;
+namespace Studionone\RandomPHP;
 
-use joshredwards\RandomPHP\Interfaces\PseudoRandomNumberGeneratorFactoryInterface;
-use joshredwards\RandomPHP\Interfaces\PseudoRandomNumberGeneratorInterface;
-use joshredwards\RandomPHP\Interfaces\SeedGeneratorInterface;
+use Studionone\RandomPHP\Interfaces\PseudoRandomNumberGeneratorFactoryInterface;
+use Studionone\RandomPHP\Interfaces\PseudoRandomNumberGeneratorInterface;
+use Studionone\RandomPHP\Interfaces\SeedGeneratorInterface;
 
 class MersenneTwisterPRNGFactory implements PseudoRandomNumberGeneratorFactoryInterface
 {

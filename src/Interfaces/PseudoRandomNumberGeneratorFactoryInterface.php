@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace joshredwards\RandomPHP\Interfaces;
+namespace Studionone\RandomPHP\Interfaces;
 
 interface PseudoRandomNumberGeneratorFactoryInterface
 {

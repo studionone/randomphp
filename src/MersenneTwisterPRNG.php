@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace joshredwards\RandomPHP;
+namespace Studionone\RandomPHP;
 
-use joshredwards\RandomPHP\Exceptions\RandomChoiceException;
-use joshredwards\RandomPHP\Interfaces\PseudoRandomNumberGeneratorInterface;
+use Studionone\RandomPHP\Exceptions\RandomChoiceException;
+use Studionone\RandomPHP\Interfaces\PseudoRandomNumberGeneratorInterface;
 use mersenne_twister\twister as Twister;
 
 class MersenneTwisterPRNG implements PseudoRandomNumberGeneratorInterface
