@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "2ab49b7b0b247cbf1d403e0818d0409e",
+    "packages": [
+        {
+            "name": "ruafozy/mersenne-twister",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ruafozy/php-mersenne-twister.git",
+                "reference": "83ca113aa1e5f924d3b5f03679b1480063cc7d94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ruafozy/php-mersenne-twister/zipball/83ca113aa1e5f924d3b5f03679b1480063cc7d94",
+                "reference": "83ca113aa1e5f924d3b5f03679b1480063cc7d94",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1.4"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/mersenne_twister.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Pure-PHP Mersenne Twister",
+            "homepage": "https://github.com/ruafozy/php-mersenne-twister",
+            "keywords": [
+                "PRNG",
+                "mersenne",
+                "random"
+            ],
+            "time": "2015-02-21T10:26:45+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.0.0"
+    },
+    "platform-dev": []
+}
