@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Studionone\Randomphp;
+namespace Studionone\RandomPHP;
 
-use Studionone\Randomphp\Interfaces\SeedGeneratorInterface;
+use Studionone\RandomPHP\Interfaces\SeedGeneratorInterface;
 
 /**
  * Generates a random-number-generator seed
