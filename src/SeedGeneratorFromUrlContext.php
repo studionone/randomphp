@@ -2,7 +2,7 @@
 
 namespace Studionone\Randomphp;
 
-use Studionone\RandomPHP\Interfaces\SeedGeneratorInterface;
+use Studionone\Randomphp\Interfaces\SeedGeneratorInterface;
 
 /**
  * Generates a random-number-generator seed
