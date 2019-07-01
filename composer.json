@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Studionone\\Randomphp\\": "src"
+            "Studionone\\RandomPHP\\": "src"
         }
     }
 }
