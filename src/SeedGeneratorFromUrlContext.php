@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Studionone\RandomPHP;
+namespace Studionone\Randomphp;
 
 use Studionone\RandomPHP\Interfaces\SeedGeneratorInterface;
 
