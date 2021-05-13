@@ -1,21 +1,23 @@
 {
-    "name": "studionone/randomphp",
-    "authors":
-    [
-        {
-            "name": "Studio None",
-            "email": "developers@studionone.com.au",
-            "homepage": "http://studionone.com.au",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php" : ">=7.0.0",
-        "ruafozy/mersenne-twister": "1.3.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Studionone\\RandomPHP\\": "src/"
-        }
+  "name": "studionone/randomphp",
+  "description": "Generate random numbers",
+  "version": "1.0.1",
+  "authors":
+  [
+    {
+      "name": "Studio None",
+      "email": "developers@studionone.com.au",
+      "homepage": "https://studionone.com.au",
+      "role": "Developer"
     }
+  ],
+  "require": {
+    "php" : ">=7.0.0",
+    "ruafozy/mersenne-twister": "1.3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Studionone\\RandomPHP\\": "src/"
+    }
+  }
 }

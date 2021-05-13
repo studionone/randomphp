@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Studionone\RandomPHP;
 
@@ -6,10 +8,19 @@ use Studionone\RandomPHP\Exceptions\RandomChoiceException;
 use Studionone\RandomPHP\Interfaces\PseudoRandomNumberGeneratorInterface;
 use mersenne_twister\twister as Twister;
 
+/**
+ * Class MersenneTwisterPRNG
+ *
+ * @package Studionone\RandomPHP
+ */
 class MersenneTwisterPRNG implements PseudoRandomNumberGeneratorInterface
 {
+    /** @var Twister */
     protected $twister;
 
+    /**
+     * MersenneTwisterPRNG constructor.
+     */
     public function __construct()
     {
         $this->twister = new Twister();
@@ -22,8 +33,7 @@ class MersenneTwisterPRNG implements PseudoRandomNumberGeneratorInterface
     }
 
     /**
-     * Seed (or re-seed) the pseudo-random number generator using the
-     * given string.
+     * @inheritDoc
      */
     public function seedWithString(string $seed)
     {
@@ -31,8 +41,7 @@ class MersenneTwisterPRNG implements PseudoRandomNumberGeneratorInterface
     }
 
     /**
-     * Seed (or re-seed) the pseudo-random number generator using the
-     * given integer.
+     * @inheritDoc
      */
     public function seedWithInt(int $seed)
     {
@@ -40,30 +49,27 @@ class MersenneTwisterPRNG implements PseudoRandomNumberGeneratorInterface
     }
 
     /**
-     * Give one randomly-chosen item out of an array of choices.
-     *
-     * TODO Adjust this to support any array-like collection.
+     * @inheritDoc
      */
     public function chooseOutOf(array $choices)
     {
         $length = count($choices);
-        if ($length == 0) {
+        if ($length === 0) {
             throw new RandomChoiceException(
-                'Can\'t randomly choose items from an empty array');
+                'Can\'t randomly choose items from an empty array'
+            );
         }
 
         return $choices[$this->getIntInRange(0, $length - 1)];
     }
 
     /**
-     * Get a pseudo-random integer within the given minimum and
-     * maximum (inclusive).
+     * @inheritDoc
      */
     public function getIntInRange(
         int $minimum,
         int $maximum
-    ): int
-    {
+    ): int {
         return $this->twister->rangeint($minimum, $maximum);
     }
 }
